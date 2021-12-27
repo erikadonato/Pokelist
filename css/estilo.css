@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #b2ade5, #f393ee);
+	background: linear-gradient(to right, #b2ade5, #f393ee);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Raleway';
+	margin: 0;
+}
+
+h1 {
+	letter-spacing: 3px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poke-container {
+    display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+    max-width: 12rem;
+    min-width: 12rem;
+}
+
+.pokemon .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.pokemon .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.pokemon .info {
+	margin-top: 20px;
+}
+
+.pokemon .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+
+.pokemon .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 3% 0 1% 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #c705bd;
+}
+
+
+@media screen and (max-width: 800px) {
+    .poke-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pokemon {
+        min-width: 10rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .poke-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pokemon {
+        min-width: 10rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .poke-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pokemon {
+        min-width: 16rem;
+    }
+}
