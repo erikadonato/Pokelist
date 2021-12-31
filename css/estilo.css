@@ -48,6 +48,10 @@ h1 {
     min-width: 12rem;
 }
 
+.pokemon:hover {
+    border: 1px solid #FFF;
+}
+
 .pokemon .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 50%;
@@ -85,6 +89,8 @@ h1 {
     cursor: pointer;
     text-transform: uppercase;
     background-color: #c705bd;
+    color: #FFF;
+
 }
 
 
